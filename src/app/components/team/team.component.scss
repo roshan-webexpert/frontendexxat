@@ -1,0 +1,43 @@
+$font-family1: "Raleway", sans-serif;
+$font-family2: "Poppins" sans-serif;
+$font-family3: "Open Sans", sans-serif;
+$font-family4: "Work Sans", sans-serif;
+$color: #c24d2c;
+$text-color: #fff;
+$alternate-bgcolor: #e9e9e9;
+
+/*#c24d2c :- orange brown color
+#ed733f :- faint orange brown color on hover effect;
+*/
+
+// Team scss
+#team {
+  background-color: $text-color;
+  font-family: $font-family4;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 60px;
+  .row {
+    padding-top: 45px;
+  }
+  .team-heading {
+    text-align: center;
+    padding-top: 60px;
+  }
+  .card-group {
+    .card-body {
+      .card-title {
+        font-family: $font-family4;
+        // color: rebeccapurple;
+        font-weight: 500;
+      }
+      .card-text {
+        font-family: $font-family4;
+        color: #939393;
+        margin-top: -10px;
+      }
+    }
+  }
+}

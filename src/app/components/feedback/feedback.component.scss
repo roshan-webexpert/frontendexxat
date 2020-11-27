@@ -1,0 +1,84 @@
+$font-family1: "Raleway", sans-serif;
+$font-family2: "Poppins" sans-serif;
+$font-family3: "Open Sans", sans-serif;
+$font-family4: "Work Sans", sans-serif;
+$color: #c24d2c;
+$text-color: #fff;
+$alternate-bgcolor: #e9e9e9;
+
+/*#c24d2c :- orange brown color
+#ed733f :- faint orange brown color on hover effect;
+*/
+
+// Feedback scss
+#feedback {
+  background-color: $alternate-bgcolor;
+  font-family: $font-family4;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 50px;
+  .feedback-heading {
+    text-align: center;
+    font-family: $font-family4;
+    padding-top: 40px;
+    p {
+      color: #939393;
+      font-size: 20px;
+    }
+  }
+
+  .round-image {
+    border-radius: 50%;
+    width: 70px;
+    // margin-right: -50px;
+    // float: right;
+    // position: relative;
+  }
+
+  .roundimage-name {
+    // float: right;
+    margin-left: 120px;
+    margin-top: -70px;
+  }
+  .roundimage-desig {
+    // float: right;
+    margin-left: 120px;
+    // margin-top: -50px;
+
+    // margin-top: 20px;
+    // padding-left: 20px;
+  }
+  .arrow-bottom {
+    p {
+      padding-top: 20px;
+    }
+  }
+  .arrow-bottom:after {
+    content: " ";
+    position: absolute;
+    right: 130px;
+    bottom: -15px;
+    border-top: 15px solid $text-color;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: none;
+  }
+  .box {
+    // width: 150px;
+    // height: 75px;
+    background-color: $text-color;
+    color: #939393;
+    padding: 20px;
+    position: relative;
+    margin: 40px;
+    float: left;
+
+    .fas {
+      font-size: 3.5rem;
+      position: absolute;
+      top: 12%;
+      left: 7%;
+      color: rgba(177, 173, 173, 0.2);
+    }
+  }
+}

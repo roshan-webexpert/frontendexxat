@@ -1,0 +1,53 @@
+$font-family1: "Raleway", sans-serif;
+$font-family2: "Poppins" sans-serif;
+$font-family3: "Open Sans", sans-serif;
+$font-family4: "Work Sans", sans-serif;
+$color: #c24d2c;
+$text-color: #fff;
+$alternate-bgcolor: #e9e9e9;
+
+/*#c24d2c :- orange brown color
+#ed733f :- faint orange brown color on hover effect;
+*/
+// Video scss
+#watch-video-head {
+  background-color: $alternate-bgcolor;
+  height: 400px;
+  .watch-video-title {
+    height: 400px;
+    .watch-video-text {
+      width: 500px;
+      position: absolute;
+      margin-left: 568px;
+      //   padding-bottom: 25px;
+      h2 {
+        font-family: $font-family4;
+        font-size: 33px;
+        font-weight: 400;
+        text-align: start;
+        padding-bottom: 25px;
+        padding-right: 25px;
+      }
+      p {
+        font-family: $font-family4;
+        font-size: 16px;
+        // font-weight: 400;
+        text-align: start;
+        color: #939393;
+      }
+    }
+    .row {
+      //   height: 350px;
+      margin-top: 50px;
+      //   position: absolute;
+    }
+    .video-link {
+      //   border: 1px solid rgb(217, 21, 243);
+      max-width: 500px;
+      max-height: 350px;
+      width: 500px;
+      height: 300px;
+      margin-left: 40px;
+    }
+  }
+}

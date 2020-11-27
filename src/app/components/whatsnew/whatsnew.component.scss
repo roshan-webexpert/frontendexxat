@@ -1,0 +1,51 @@
+$font-family1: "Raleway", sans-serif;
+$font-family2: "Poppins" sans-serif;
+$font-family3: "Open Sans", sans-serif;
+$font-family4: "Work Sans", sans-serif;
+$color: #c24d2c;
+$text-color: #fff;
+$alternate-bgcolor: #e9e9e9;
+
+/*#c24d2c :- orange brown color
+#ed733f :- faint orange brown color on hover effect;
+*/
+// Whatsnew scss
+#whatsnew {
+  background-color: $text-color;
+  font-family: $font-family4;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 60px;
+  .whatsnew-heading {
+    .whatsnew-text {
+      margin-top: 50px;
+      margin-bottom: 67px;
+      font-family: $font-family4;
+      font-weight: 500;
+    }
+    .whatsnew-para {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      font-family: $font-family4;
+      font-weight: 400;
+      color: #939393;
+    }
+    .card-horizontal {
+      display: flex;
+      flex: 1 1 auto;
+      .card-title {
+        font-family: $font-family4;
+        font-size: 19px;
+        font-weight: 500;
+        padding-bottom: 10px;
+      }
+      .card-text {
+        font-family: $font-family4;
+        font-size: 16px;
+        color: #939393;
+      }
+    }
+  }
+}

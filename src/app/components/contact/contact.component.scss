@@ -1,0 +1,86 @@
+$font-family1: "Raleway", sans-serif;
+$font-family2: "Poppins" sans-serif;
+$font-family3: "Open Sans", sans-serif;
+$font-family4: "Work Sans", sans-serif;
+$color: #c24d2c;
+$text-color: #fff;
+$alternate-bgcolor: #e9e9e9;
+
+/*#c24d2c :- orange brown color
+#ed733f :- faint orange brown color on hover effect;
+*/
+
+// Contact scss
+#contact {
+  background-color: $text-color;
+  font-family: $font-family4;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 60px;
+  .contact-div {
+    margin-right: 80px;
+  }
+  .contact-heading {
+    padding-top: 60px;
+    margin-right: 80px;
+    h2 {
+      font-family: $font-family4;
+      font-size: 18px;
+      font-weight: 600;
+      padding-bottom: 20px;
+    }
+    p {
+      font-family: $font-family4;
+      font-size: 15px;
+      color: #939393;
+    }
+  }
+  .email {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+  }
+  .name {
+    width: 46%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    margin-top: 10px;
+  }
+  .phone {
+    width: 46%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    margin-left: 35px;
+    margin-top: 10px;
+  }
+  .textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    // box-sizing: border-box;
+    border: none;
+    margin-top: 10px;
+  }
+  .btn {
+    width: 100%;
+    padding: 10px 17px;
+    background-color: $color;
+    border: none;
+  }
+  .contact-map {
+    margin-top: 20px;
+    // width: 100%;
+    .gmap-link {
+      width: 100%;
+      // height: 100%;
+    }
+  }
+}

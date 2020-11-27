@@ -1,0 +1,125 @@
+$font-family1: "Raleway", sans-serif;
+$font-family2: "Poppins" sans-serif;
+$font-family3: "Open Sans", sans-serif;
+$font-family4: "Work Sans", sans-serif;
+$color: #c24d2c;
+$text-color: #fff;
+$alternate-bgcolor: #e9e9e9;
+
+/*#c24d2c :- orange brown color
+#ed733f :- faint orange brown color on hover effect;
+*/
+
+// About scss
+#about {
+  background-color: $text-color;
+  padding-bottom: 50px;
+  .about-heading {
+    text-align: center;
+    padding-top: 60px;
+    h1 {
+      font-family: $font-family4;
+      font-weight: 900;
+    }
+    p {
+      font-family: $font-family4;
+      // font-family: $font-family4;
+      font-size: 18px;
+      // font-weight: 400;
+      // text-align: start;
+      color: #939393;
+    }
+  }
+  .container {
+    .card-deck {
+      .card {
+        .flip-card {
+          background-color: transparent;
+          width: 100%;
+          height: 200px;
+          border: 1px solid #f1f1f1;
+          perspective: 1000px; /* Remove this if you don't want the 3D effect */
+          // padding-bottom: 20px;
+        }
+
+        /* This container is needed to position the front and back side */
+        .flip-card-inner {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          transition: transform 0.8s;
+          transform-style: preserve-3d;
+        }
+
+        /* Do an horizontal flip when you move the mouse over the flip box container */
+        .flip-card:hover .flip-card-inner {
+          transform: rotateY(180deg);
+        }
+
+        /* Position the front and back side */
+        .flip-card-front,
+        .flip-card-back {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          -webkit-backface-visibility: hidden; /* Safari */
+          backface-visibility: hidden;
+        }
+
+        /* Style the front side (fallback if image is missing) */
+        .flip-card-front {
+          background-color: #fff;
+          color: black;
+        }
+
+        /* Style the back side */
+        .flip-card-back {
+          background-color: $text-color;
+          color: $color;
+          transform: rotateY(180deg);
+          font-size: 110px;
+          padding-top: 5px;
+          // width: 120px;
+        }
+
+        margin: 10px 10px 10px 10px;
+        height: 200px;
+        // width: 50px;
+        // margin-bottom: 20px;
+        .card-body {
+          width: 300px;
+          // margin-left: 20px;
+          i {
+            // font-weight: 400;
+            font-size: 30px;
+            float: left;
+            width: 30px;
+            // height: ;
+            color: $color;
+            position: relative;
+            margin-top: 5px;
+            // position: initial;
+            // position: absolute;
+            // margin-left: -65px;
+          }
+          span {
+            text-align: right;
+            // padding-left: 5px;
+            font-family: $font-family4;
+            font-weight: 550;
+            margin-left: -20px;
+          }
+          p {
+            text-align: start;
+            padding-left: 55px;
+            padding-top: 15px;
+            font-family: $font-family4;
+            // font-weight: ;
+            color: #939393;
+          }
+        }
+      }
+    }
+  }
+}

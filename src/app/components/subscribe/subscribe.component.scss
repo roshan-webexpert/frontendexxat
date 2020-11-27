@@ -1,0 +1,131 @@
+$font-family1: "Raleway", sans-serif;
+$font-family2: "Poppins" sans-serif;
+$font-family3: "Open Sans", sans-serif;
+$font-family4: "Work Sans", sans-serif;
+$color: #c24d2c;
+$text-color: #fff;
+$alternate-bgcolor: #e9e9e9;
+
+/*#c24d2c :- orange brown color
+#ed733f :- faint orange brown color on hover effect;
+*/
+
+// Subscribe scss
+#subscribe {
+  background-color: $alternate-bgcolor;
+  font-family: $font-family4;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
+  .row {
+    margin-top: 50px;
+  }
+  .subscribe-heading {
+    text-align: center;
+    padding-top: 60px;
+  }
+  .subscribe-main {
+    width: 20rem;
+    margin-left: 15px;
+    .subscribe-seperator {
+      border-bottom: 4px solid $alternate-bgcolor;
+    }
+    .card-body {
+      .card-title {
+        font-family: $font-family4;
+        // background-color: $text-color;
+      }
+      .big {
+        font-family: $font-family4;
+        font-weight: 700;
+        letter-spacing: 2px;
+        padding-top: 5px;
+        // font-size: initial;
+        .small {
+          letter-spacing: 0;
+          font-size: 18px;
+          margin-left: 2px;
+          font-weight: 600;
+        }
+      }
+      h3 {
+        font-family: $font-family4;
+        font-weight: 500;
+        font-size: 18px;
+        padding-top: 15px;
+      }
+      .card-text {
+        font-family: $font-family4;
+        font-size: 16px;
+        color: #939393;
+        padding-top: 1px;
+      }
+    }
+
+    ul {
+      border-bottom: none;
+      padding-top: 10px;
+      font-family: $font-family4;
+      li {
+        border-bottom: none;
+        font-family: $font-family4;
+        color: #4d4b4b;
+        .fas {
+          padding-right: 10px;
+          font-size: 18px;
+          color: $color;
+          // font-weight: 100;
+        }
+        .first-item {
+          padding-left: 5px;
+        }
+        .second-item {
+          padding-left: 5px;
+        }
+        .third-item {
+          padding-left: 9px;
+        }
+        .fourth-item {
+          padding-left: 7px;
+        }
+        .fifth-item {
+          padding-left: 7px;
+        }
+        .sixth-item {
+          padding-left: 7px;
+        }
+      }
+    }
+    .button {
+      font-family: $font-family4;
+      border: none;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      width: 270px;
+      margin-left: 10px;
+      color: $color;
+      background-color: $text-color;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      // padding-left: 20px;
+    }
+  }
+  .subscribe-main:hover {
+    .card-body-price {
+      background-color: $color;
+      color: $text-color;
+    }
+    .card-body {
+      .button {
+        background-color: $color;
+        color: $text-color;
+      }
+    }
+    // .subscribe-seperator {
+    //   border: 4px solid $text-color;
+    // }
+  }
+}

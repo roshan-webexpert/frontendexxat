@@ -1,0 +1,21 @@
+$font-family1: "Raleway", sans-serif;
+$font-family2: "Poppins" sans-serif;
+$font-family3: "Open Sans", sans-serif;
+$font-family4: "Work Sans", sans-serif;
+$color: #c24d2c;
+$text-color: #fff;
+$alternate-bgcolor: #e9e9e9;
+
+/*#c24d2c :- orange brown color
+#ed733f :- faint orange brown color on hover effect;
+*/
+// Footer scss
+.footer {
+  text-align: center;
+  font-family: $font-family4;
+  font-weight: 500;
+  color: #4d4b4b;
+  a {
+    color: $color;
+  }
+}
